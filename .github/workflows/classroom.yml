@@ -7,12 +7,20 @@ jobs:
     name: Autograding
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: education/autograding@v1
-        id: autograding
+      # Step 1: Get a copy of the student's code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up the Node.js environment so we can use npm
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          test_name: 'Run Tests'
-          setup_command: 'npm install'
-          command: 'npm run mark-completion'
-          timeout: 10
-          points: 100
+          node-version: '18' # Use a stable version of Node.js
+
+      # Step 3: Run the "Setup command" to install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Run the "Test command" to check the student's work
+      - name: Run tests
+        run: npm run mark-completion
