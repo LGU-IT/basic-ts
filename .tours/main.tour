@@ -1,0 +1,32 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "TypeScript Basics Assignment",
+  "steps": [
+    {
+      "title": "Welcome to the Assignment!",
+      "description": "Welcome to your first TypeScript assignment! \n\nThis tour will quickly guide you through the project structure and show you how to complete and submit your work.\n\nUse the `Next` button below to move through the steps."
+    },
+    {
+      "file": "package.json",
+      "line": 6,
+      "title": "How to Check Your Work",
+      "description": "This is the `package.json` file. It defines our project and its commands.\n\nThe most important line for you is the `\"mark-completion\"` script.\n\nTo check if you have solved the problems correctly, you will run this command in your terminal:\n\n`>> npm run mark-completion`\n\nThis will run a series of automated tests on your code and give you immediate feedback."
+    },
+    {
+      "file": "problems/01-variables.ts",
+      "line": 1,
+      "title": "Solving the Problems",
+      "description": "All the problems you need to solve are located in the `problems/` directory.\n\nThis first file, `01-variables.ts`, asks you to declare some variables.\n\nFollow the instructions in the comments of each file to complete the assignment. You will only need to edit files inside this directory."
+    },
+    {
+      "file": "tests/01-variables.test.ts",
+      "line": 1,
+      "title": "How Testing Works (Optional)",
+      "description": "The `tests/` directory contains all the test files that are run by the `npm run mark-completion` command.\n\nYou don't need to edit anything in here, but feel free to look around if you're curious about how automated testing works!"
+    },
+     {
+      "title": "You're Ready to Go!",
+      "description": "That's it! You now know how the project is structured.\n\n**Your next steps:**\n1.  Open the files in the `problems/` directory.\n2.  Follow the instructions to write your code.\n3.  Run `npm run mark-completion` to check your work.\n4.  Once all tests pass, commit and push your code to GitHub.\n\nGood luck!"
+    }
+  ]
+}
